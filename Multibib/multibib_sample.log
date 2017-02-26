@@ -1,0 +1,85 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=latex 2010.5.23)  23 MAY 2010 20:21
+entering extended mode
+ %&-line parsing enabled.
+**multibib_sample
+(./multibib_sample.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, german-x-2009-06-19, ngerman-x-2009-06-19, ancientgreek, ibycus, ar
+abic, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutc
+h, esperanto, estonian, farsi, finnish, french, galician, german, ngerman, mono
+greek, greek, hungarian, icelandic, assamese, bengali, gujarati, hindi, kannada
+, malayalam, marathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, i
+rish, italian, kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, b
+okmal, nynorsk, polish, portuguese, romanian, russian, sanskrit, serbian, slova
+k, slovenian, spanish, swedish, turkish, turkmen, ukenglish, ukrainian, upperso
+rbian, welsh, loaded.
+(/usr/local/texlive/2009/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2009/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/multibib/multibib.sty
+Package: multibib 2008/12/10 v1.4 Multiple bibliographies for one document.
+\mb@biblabelwidth=\count87
+)
+\@auxoutJ=\write3
+ (./J.aux
+
+LaTeX Warning: Label `xyz' multiply defined.
+
+
+LaTeX Warning: Label `ikoma2009uniqueness' multiply defined.
+
+)
+\openout3 = `J.aux'.
+
+\@auxoutC=\write4
+ (./C.aux
+
+LaTeX Warning: Label `montefusco2008semiclassical' multiply defined.
+
+)
+\openout4 = `C.aux'.
+
+ (./multibib_sample.aux)
+\openout1 = `multibib_sample.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+ (./J.bbl) (./C.bbl) (./J.bbl) (./C.bbl [1
+
+]) [2]
+(./multibib_sample.aux) ) 
+Here is how much of TeX's memory you used:
+ 310 strings out of 493774
+ 3497 string characters out of 3145369
+ 53020 words of memory out of 3000000
+ 3661 multiletter control sequences out of 15000+200000
+ 4891 words of font info for 18 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 22i,4n,20p,158b,227s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on multibib_sample.dvi (2 pages, 1864 bytes).

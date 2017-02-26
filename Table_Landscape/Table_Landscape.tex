@@ -1,0 +1,23 @@
+\documentclass[11pt,a4paper]{article}
+%\usepackage[T1]{fontenc}
+%\usepackage[latin1]{inputenc}
+%\usepackage[english]{babel}
+%\usepackage[margin=2cm]{geometry}
+%\usepackage{lmodern}
+%\usepackage{blindtext}
+\usepackage{rotating}
+
+\begin{document}
+% \blindtext[1]
+
+  \begin{sidewaystable}[t]
+    \caption{Results}
+    \centering
+    \begin{tabular}{rr*{16}{c}}
+      Case & Tol & \multicolumn{4}{c}{W = .5} & \multicolumn{4}{c}{W = .6} & \multicolumn{4}{c}{Old R-K} & \multicolumn{4}{c}{Soderlind} \\
+      & & NF & Max-err & Sum-SQ & Max & Max-err & Sum-SQ & Max & Max-err & Sum-SQ & Max & Max-err & Sum-SQ & Max \\
+    \end{tabular}
+  \end{sidewaystable}
+
+%  \blindtext[4]
+\end{document}

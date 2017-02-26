@@ -1,0 +1,505 @@
+%!PS-Adobe-2.0
+%%Creator: dvips(k) 5.86 Copyright 1999 Radical Eye Software
+%%Title: test.dvi
+%%CreationDate: Mon Jun 16 09:16:02 2003
+%%Pages: 1
+%%PageOrder: Ascend
+%%BoundingBox: 0 0 596 842
+%%DocumentFonts: CMR12
+%%DocumentPaperSizes: a4
+%%EndComments
+%DVIPSWebPage: (www.radicaleye.com)
+%DVIPSCommandLine: DVIPS.EXE -P pdf -t A4 -z test
+%DVIPSParameters: dpi=8000, compressed
+%DVIPSSource:  TeX output 2003.06.16:0915
+%%BeginProcSet: tex.pro
+%!
+/TeXDict 300 dict def TeXDict begin/N{def}def/B{bind def}N/S{exch}N/X{S
+N}B/A{dup}B/TR{translate}N/isls false N/vsize 11 72 mul N/hsize 8.5 72
+mul N/landplus90{false}def/@rigin{isls{[0 landplus90{1 -1}{-1 1}ifelse 0
+0 0]concat}if 72 Resolution div 72 VResolution div neg scale isls{
+landplus90{VResolution 72 div vsize mul 0 exch}{Resolution -72 div hsize
+mul 0}ifelse TR}if Resolution VResolution vsize -72 div 1 add mul TR[
+matrix currentmatrix{A A round sub abs 0.00001 lt{round}if}forall round
+exch round exch]setmatrix}N/@landscape{/isls true N}B/@manualfeed{
+statusdict/manualfeed true put}B/@copies{/#copies X}B/FMat[1 0 0 -1 0 0]
+N/FBB[0 0 0 0]N/nn 0 N/IEn 0 N/ctr 0 N/df-tail{/nn 8 dict N nn begin
+/FontType 3 N/FontMatrix fntrx N/FontBBox FBB N string/base X array
+/BitMaps X/BuildChar{CharBuilder}N/Encoding IEn N end A{/foo setfont}2
+array copy cvx N load 0 nn put/ctr 0 N[}B/sf 0 N/df{/sf 1 N/fntrx FMat N
+df-tail}B/dfs{div/sf X/fntrx[sf 0 0 sf neg 0 0]N df-tail}B/E{pop nn A
+definefont setfont}B/Cw{Cd A length 5 sub get}B/Ch{Cd A length 4 sub get
+}B/Cx{128 Cd A length 3 sub get sub}B/Cy{Cd A length 2 sub get 127 sub}
+B/Cdx{Cd A length 1 sub get}B/Ci{Cd A type/stringtype ne{ctr get/ctr ctr
+1 add N}if}B/CharBuilder{save 3 1 roll S A/base get 2 index get S
+/BitMaps get S get/Cd X pop/ctr 0 N Cdx 0 Cx Cy Ch sub Cx Cw add Cy
+setcachedevice Cw Ch true[1 0 0 -1 -.1 Cx sub Cy .1 sub]{Ci}imagemask
+restore}B/D{/cc X A type/stringtype ne{]}if nn/base get cc ctr put nn
+/BitMaps get S ctr S sf 1 ne{A A length 1 sub A 2 index S get sf div put
+}if put/ctr ctr 1 add N}B/I{cc 1 add D}B/bop{userdict/bop-hook known{
+bop-hook}if/SI save N @rigin 0 0 moveto/V matrix currentmatrix A 1 get A
+mul exch 0 get A mul add .99 lt{/QV}{/RV}ifelse load def pop pop}N/eop{
+SI restore userdict/eop-hook known{eop-hook}if showpage}N/@start{
+userdict/start-hook known{start-hook}if pop/VResolution X/Resolution X
+1000 div/DVImag X/IEn 256 array N 2 string 0 1 255{IEn S A 360 add 36 4
+index cvrs cvn put}for pop 65781.76 div/vsize X 65781.76 div/hsize X}N
+/p{show}N/RMat[1 0 0 -1 0 0]N/BDot 260 string N/Rx 0 N/Ry 0 N/V{}B/RV/v{
+/Ry X/Rx X V}B statusdict begin/product where{pop false[(Display)(NeXT)
+(LaserWriter 16/600)]{A length product length le{A length product exch 0
+exch getinterval eq{pop true exit}if}{pop}ifelse}forall}{false}ifelse
+end{{gsave TR -.1 .1 TR 1 1 scale Rx Ry false RMat{BDot}imagemask
+grestore}}{{gsave TR -.1 .1 TR Rx Ry scale 1 1 false RMat{BDot}
+imagemask grestore}}ifelse B/QV{gsave newpath transform round exch round
+exch itransform moveto Rx 0 rlineto 0 Ry neg rlineto Rx neg 0 rlineto
+fill grestore}B/a{moveto}B/delta 0 N/tail{A/delta X 0 rmoveto}B/M{S p
+delta add tail}B/b{S p tail}B/c{-4 M}B/d{-3 M}B/e{-2 M}B/f{-1 M}B/g{0 M}
+B/h{1 M}B/i{2 M}B/j{3 M}B/k{4 M}B/w{0 rmoveto}B/l{p -4 w}B/m{p -3 w}B/n{
+p -2 w}B/o{p -1 w}B/q{p 1 w}B/r{p 2 w}B/s{p 3 w}B/t{p 4 w}B/x{0 S
+rmoveto}B/y{3 2 roll p a}B/bos{/SS save N}B/eos{SS restore}B end
+
+%%EndProcSet
+%%BeginProcSet: alt-rule.pro
+%!
+% Patch by TVZ
+% Makes dvips files draw rules with stroke rather than fill.
+% Makes narrow rules more predictable at low resolutions
+% after distilling to PDF.
+% May have unknown consequences for very thick rules.
+% Tested only with dvips 5.85(k).
+TeXDict begin
+/QV {
+  gsave newpath /ruleY X /ruleX X
+  Rx Ry gt
+  { ruleX ruleY Ry 2 div sub moveto Rx 0 rlineto Ry }
+  { ruleX Rx 2 div add ruleY moveto 0 Ry neg rlineto Rx }
+  ifelse
+  setlinewidth 0 setlinecap stroke grestore
+} bind def
+end
+
+%%EndProcSet
+%%BeginProcSet: texc.pro
+%!
+/TeXDict 300 dict def TeXDict begin/N{def}def/B{bind def}N/S{exch}N/X{S
+N}B/A{dup}B/TR{translate}N/isls false N/vsize 11 72 mul N/hsize 8.5 72
+mul N/landplus90{false}def/@rigin{isls{[0 landplus90{1 -1}{-1 1}ifelse 0
+0 0]concat}if 72 Resolution div 72 VResolution div neg scale isls{
+landplus90{VResolution 72 div vsize mul 0 exch}{Resolution -72 div hsize
+mul 0}ifelse TR}if Resolution VResolution vsize -72 div 1 add mul TR[
+matrix currentmatrix{A A round sub abs 0.00001 lt{round}if}forall round
+exch round exch]setmatrix}N/@landscape{/isls true N}B/@manualfeed{
+statusdict/manualfeed true put}B/@copies{/#copies X}B/FMat[1 0 0 -1 0 0]
+N/FBB[0 0 0 0]N/nn 0 N/IEn 0 N/ctr 0 N/df-tail{/nn 8 dict N nn begin
+/FontType 3 N/FontMatrix fntrx N/FontBBox FBB N string/base X array
+/BitMaps X/BuildChar{CharBuilder}N/Encoding IEn N end A{/foo setfont}2
+array copy cvx N load 0 nn put/ctr 0 N[}B/sf 0 N/df{/sf 1 N/fntrx FMat N
+df-tail}B/dfs{div/sf X/fntrx[sf 0 0 sf neg 0 0]N df-tail}B/E{pop nn A
+definefont setfont}B/Cw{Cd A length 5 sub get}B/Ch{Cd A length 4 sub get
+}B/Cx{128 Cd A length 3 sub get sub}B/Cy{Cd A length 2 sub get 127 sub}
+B/Cdx{Cd A length 1 sub get}B/Ci{Cd A type/stringtype ne{ctr get/ctr ctr
+1 add N}if}B/id 0 N/rw 0 N/rc 0 N/gp 0 N/cp 0 N/G 0 N/CharBuilder{save 3
+1 roll S A/base get 2 index get S/BitMaps get S get/Cd X pop/ctr 0 N Cdx
+0 Cx Cy Ch sub Cx Cw add Cy setcachedevice Cw Ch true[1 0 0 -1 -.1 Cx
+sub Cy .1 sub]/id Ci N/rw Cw 7 add 8 idiv string N/rc 0 N/gp 0 N/cp 0 N{
+rc 0 ne{rc 1 sub/rc X rw}{G}ifelse}imagemask restore}B/G{{id gp get/gp
+gp 1 add N A 18 mod S 18 idiv pl S get exec}loop}B/adv{cp add/cp X}B
+/chg{rw cp id gp 4 index getinterval putinterval A gp add/gp X adv}B/nd{
+/cp 0 N rw exit}B/lsh{rw cp 2 copy get A 0 eq{pop 1}{A 255 eq{pop 254}{
+A A add 255 and S 1 and or}ifelse}ifelse put 1 adv}B/rsh{rw cp 2 copy
+get A 0 eq{pop 128}{A 255 eq{pop 127}{A 2 idiv S 128 and or}ifelse}
+ifelse put 1 adv}B/clr{rw cp 2 index string putinterval adv}B/set{rw cp
+fillstr 0 4 index getinterval putinterval adv}B/fillstr 18 string 0 1 17
+{2 copy 255 put pop}for N/pl[{adv 1 chg}{adv 1 chg nd}{1 add chg}{1 add
+chg nd}{adv lsh}{adv lsh nd}{adv rsh}{adv rsh nd}{1 add adv}{/rc X nd}{
+1 add set}{1 add clr}{adv 2 chg}{adv 2 chg nd}{pop nd}]A{bind pop}
+forall N/D{/cc X A type/stringtype ne{]}if nn/base get cc ctr put nn
+/BitMaps get S ctr S sf 1 ne{A A length 1 sub A 2 index S get sf div put
+}if put/ctr ctr 1 add N}B/I{cc 1 add D}B/bop{userdict/bop-hook known{
+bop-hook}if/SI save N @rigin 0 0 moveto/V matrix currentmatrix A 1 get A
+mul exch 0 get A mul add .99 lt{/QV}{/RV}ifelse load def pop pop}N/eop{
+SI restore userdict/eop-hook known{eop-hook}if showpage}N/@start{
+userdict/start-hook known{start-hook}if pop/VResolution X/Resolution X
+1000 div/DVImag X/IEn 256 array N 2 string 0 1 255{IEn S A 360 add 36 4
+index cvrs cvn put}for pop 65781.76 div/vsize X 65781.76 div/hsize X}N
+/p{show}N/RMat[1 0 0 -1 0 0]N/BDot 260 string N/Rx 0 N/Ry 0 N/V{}B/RV/v{
+/Ry X/Rx X V}B statusdict begin/product where{pop false[(Display)(NeXT)
+(LaserWriter 16/600)]{A length product length le{A length product exch 0
+exch getinterval eq{pop true exit}if}{pop}ifelse}forall}{false}ifelse
+end{{gsave TR -.1 .1 TR 1 1 scale Rx Ry false RMat{BDot}imagemask
+grestore}}{{gsave TR -.1 .1 TR Rx Ry scale 1 1 false RMat{BDot}
+imagemask grestore}}ifelse B/QV{gsave newpath transform round exch round
+exch itransform moveto Rx 0 rlineto 0 Ry neg rlineto Rx neg 0 rlineto
+fill grestore}B/a{moveto}B/delta 0 N/tail{A/delta X 0 rmoveto}B/M{S p
+delta add tail}B/b{S p tail}B/c{-4 M}B/d{-3 M}B/e{-2 M}B/f{-1 M}B/g{0 M}
+B/h{1 M}B/i{2 M}B/j{3 M}B/k{4 M}B/w{0 rmoveto}B/l{p -4 w}B/m{p -3 w}B/n{
+p -2 w}B/o{p -1 w}B/q{p 1 w}B/r{p 2 w}B/s{p 3 w}B/t{p 4 w}B/x{0 S
+rmoveto}B/y{3 2 roll p a}B/bos{/SS save N}B/eos{SS restore}B end
+
+%%EndProcSet
+%%BeginProcSet: texps.pro
+%!
+TeXDict begin/rf{findfont dup length 1 add dict begin{1 index/FID ne 2
+index/UniqueID ne and{def}{pop pop}ifelse}forall[1 index 0 6 -1 roll
+exec 0 exch 5 -1 roll VResolution Resolution div mul neg 0 0]/Metrics
+exch def dict begin Encoding{exch dup type/integertype ne{pop pop 1 sub
+dup 0 le{pop}{[}ifelse}{FontMatrix 0 get div Metrics 0 get div def}
+ifelse}forall Metrics/Metrics currentdict end def[2 index currentdict
+end definefont 3 -1 roll makefont/setfont cvx]cvx def}def/ObliqueSlant{
+dup sin S cos div neg}B/SlantFont{4 index mul add}def/ExtendFont{3 -1
+roll mul exch}def/ReEncodeFont{CharStrings rcheck{/Encoding false def
+dup[exch{dup CharStrings exch known not{pop/.notdef/Encoding true def}
+if}forall Encoding{]exch pop}{cleartomark}ifelse}if/Encoding exch def}
+def end
+
+%%EndProcSet
+%%BeginProcSet: special.pro
+%!
+TeXDict begin/SDict 200 dict N SDict begin/@SpecialDefaults{/hs 612 N
+/vs 792 N/ho 0 N/vo 0 N/hsc 1 N/vsc 1 N/ang 0 N/CLIP 0 N/rwiSeen false N
+/rhiSeen false N/letter{}N/note{}N/a4{}N/legal{}N}B/@scaleunit 100 N
+/@hscale{@scaleunit div/hsc X}B/@vscale{@scaleunit div/vsc X}B/@hsize{
+/hs X/CLIP 1 N}B/@vsize{/vs X/CLIP 1 N}B/@clip{/CLIP 2 N}B/@hoffset{/ho
+X}B/@voffset{/vo X}B/@angle{/ang X}B/@rwi{10 div/rwi X/rwiSeen true N}B
+/@rhi{10 div/rhi X/rhiSeen true N}B/@llx{/llx X}B/@lly{/lly X}B/@urx{
+/urx X}B/@ury{/ury X}B/magscale true def end/@MacSetUp{userdict/md known
+{userdict/md get type/dicttype eq{userdict begin md length 10 add md
+maxlength ge{/md md dup length 20 add dict copy def}if end md begin
+/letter{}N/note{}N/legal{}N/od{txpose 1 0 mtx defaultmatrix dtransform S
+atan/pa X newpath clippath mark{transform{itransform moveto}}{transform{
+itransform lineto}}{6 -2 roll transform 6 -2 roll transform 6 -2 roll
+transform{itransform 6 2 roll itransform 6 2 roll itransform 6 2 roll
+curveto}}{{closepath}}pathforall newpath counttomark array astore/gc xdf
+pop ct 39 0 put 10 fz 0 fs 2 F/|______Courier fnt invertflag{PaintBlack}
+if}N/txpose{pxs pys scale ppr aload pop por{noflips{pop S neg S TR pop 1
+-1 scale}if xflip yflip and{pop S neg S TR 180 rotate 1 -1 scale ppr 3
+get ppr 1 get neg sub neg ppr 2 get ppr 0 get neg sub neg TR}if xflip
+yflip not and{pop S neg S TR pop 180 rotate ppr 3 get ppr 1 get neg sub
+neg 0 TR}if yflip xflip not and{ppr 1 get neg ppr 0 get neg TR}if}{
+noflips{TR pop pop 270 rotate 1 -1 scale}if xflip yflip and{TR pop pop
+90 rotate 1 -1 scale ppr 3 get ppr 1 get neg sub neg ppr 2 get ppr 0 get
+neg sub neg TR}if xflip yflip not and{TR pop pop 90 rotate ppr 3 get ppr
+1 get neg sub neg 0 TR}if yflip xflip not and{TR pop pop 270 rotate ppr
+2 get ppr 0 get neg sub neg 0 S TR}if}ifelse scaleby96{ppr aload pop 4
+-1 roll add 2 div 3 1 roll add 2 div 2 copy TR .96 dup scale neg S neg S
+TR}if}N/cp{pop pop showpage pm restore}N end}if}if}N/normalscale{
+Resolution 72 div VResolution 72 div neg scale magscale{DVImag dup scale
+}if 0 setgray}N/psfts{S 65781.76 div N}N/startTexFig{/psf$SavedState
+save N userdict maxlength dict begin/magscale true def normalscale
+currentpoint TR/psf$ury psfts/psf$urx psfts/psf$lly psfts/psf$llx psfts
+/psf$y psfts/psf$x psfts currentpoint/psf$cy X/psf$cx X/psf$sx psf$x
+psf$urx psf$llx sub div N/psf$sy psf$y psf$ury psf$lly sub div N psf$sx
+psf$sy scale psf$cx psf$sx div psf$llx sub psf$cy psf$sy div psf$ury sub
+TR/showpage{}N/erasepage{}N/copypage{}N/p 3 def @MacSetUp}N/doclip{
+psf$llx psf$lly psf$urx psf$ury currentpoint 6 2 roll newpath 4 copy 4 2
+roll moveto 6 -1 roll S lineto S lineto S lineto closepath clip newpath
+moveto}N/endTexFig{end psf$SavedState restore}N/@beginspecial{SDict
+begin/SpecialSave save N gsave normalscale currentpoint TR
+@SpecialDefaults count/ocount X/dcount countdictstack N}N/@setspecial{
+CLIP 1 eq{newpath 0 0 moveto hs 0 rlineto 0 vs rlineto hs neg 0 rlineto
+closepath clip}if ho vo TR hsc vsc scale ang rotate rwiSeen{rwi urx llx
+sub div rhiSeen{rhi ury lly sub div}{dup}ifelse scale llx neg lly neg TR
+}{rhiSeen{rhi ury lly sub div dup scale llx neg lly neg TR}if}ifelse
+CLIP 2 eq{newpath llx lly moveto urx lly lineto urx ury lineto llx ury
+lineto closepath clip}if/showpage{}N/erasepage{}N/copypage{}N newpath}N
+/@endspecial{count ocount sub{pop}repeat countdictstack dcount sub{end}
+repeat grestore SpecialSave restore end}N/@defspecial{SDict begin}N
+/@fedspecial{end}B/li{lineto}B/rl{rlineto}B/rc{rcurveto}B/np{/SaveX
+currentpoint/SaveY X N 1 setlinecap newpath}N/st{stroke SaveX SaveY
+moveto}N/fil{fill SaveX SaveY moveto}N/ellipse{/endangle X/startangle X
+/yrad X/xrad X/savematrix matrix currentmatrix N TR xrad yrad scale 0 0
+1 startangle endangle arc savematrix setmatrix}N end
+
+%%EndProcSet
+%%BeginProcSet: hps.pro
+%!
+/HPSdict 20 dict dup begin/braindeaddistill 50 def/rfch{dup length 1 sub
+1 exch getinterval}bind def/splituri{dup(#)search{exch pop}{()exch}
+ifelse dup(file:)anchorsearch{pop exch pop 3 -1 roll pop false}{pop 3 -1
+roll exch pop true}ifelse}bind def/lookuptarget{exch rfch dup
+/TargetAnchors where{pop TargetAnchors dup 3 -1 roll known{exch get true
+}{pop(target unknown:)print == false}ifelse}{pop pop
+(target dictionary unknown\012)print false}ifelse}bind def/savecount 0
+def/stackstopped{count counttomark sub/savecount exch store stopped
+count savecount sub 1 sub dup 0 gt{{exch pop}repeat}{pop}ifelse}bind def
+/tempstring 256 string def/targetvalidate{1 index dup length 255 gt exch
+dup(/)search{pop pop pop exch pop true exch}{pop}ifelse cvn tempstring
+cvs token pop pop length 0 ne or not}bind def/targetdump-hook where{pop}
+{/targetdump-hook{dup mark exch gsave initmat setmatrix{{mark/Dest 4 2
+roll targetvalidate{aload pop exch pop/Page 3 1 roll/View exch[exch
+/FitH exch]/DEST pdfmark}{cleartomark}ifelse}forall}stackstopped pop
+grestore}bind def}ifelse/baseurl{mark exch 1 dict dup 3 -1 roll/Base
+exch put/URI exch/DOCVIEW{pdfmark}stackstopped pop}bind def
+/externalhack systemdict/PDF known def/oldstyle true def/initmat matrix
+currentmatrix def/actiondict 2 dict dup/Subtype/URI put def
+/weblinkhandler{dup 3 1 roll mark 4 1 roll/Title 4 1 roll splituri 3 -1
+roll dup length 0 gt{cvn/Dest exch 4 2 roll}{pop}ifelse{externalhack{
+/HTTPFile exch}{actiondict dup 3 -1 roll/URI exch put/Action exch}
+ifelse}{externalhack{/HTTPFile exch}{/File exch/Action/GoToR}ifelse}
+ifelse counttomark 2 sub -1 roll aload pop/Rect 4 1 roll/Border 3 1 roll
+/Color exch oldstyle{/LNK}{/Subtype/Link/ANN}ifelse gsave initmat
+setmatrix{pdfmark}stackstopped grestore}bind def/externalhandler where{
+pop}{/externalhandler{2 copy{weblinkhandler}exec{/externalhack
+externalhack not store 2 copy{weblinkhandler}exec{/externalhack
+externalhack not store/oldstyle false store 2 copy{weblinkhandler}exec{
+(WARNING: external refs disabled\012)print/externalhandler{pop pop}bind
+store externalhandler}{pop pop}ifelse}{pop pop/externalhack externalhack
+not store}ifelse}{pop pop/externalhandler{weblinkhandler pop}bind store}
+ifelse}bind def}ifelse/pdfmnew{dup type/stringtype eq{externalhandler}{
+exch dup rfch exch 3 -1 roll lookuptarget{mark 4 1 roll/Title 4 1 roll
+aload pop exch pop/Page 3 1 roll/View exch[exch/FitH exch]5 -1 roll
+aload pop/Rect 4 1 roll/Border 3 1 roll/Color exch/LNK gsave initmat
+setmatrix pdfmark grestore}{pop pop}ifelse}ifelse}bind def/pdfmold{dup
+type/stringtype eq{externalhandler}{exch dup rfch exch 3 -1 roll
+lookuptarget{mark 4 1 roll/Title 4 1 roll aload pop exch pop/Page 3 1
+roll/View exch[exch/FitH exch]5 -1 roll aload pop pop 0 3 getinterval
+/Rect 3 1 roll/Border exch/LNK gsave initmat setmatrix pdfmark grestore}
+{pop pop}ifelse}ifelse}bind def/pdfm where{pop}{/pdfm
+/currentdistillerparams where{pop currentdistillerparams dup
+/CoreDistVersion known{/CoreDistVersion get}{0}ifelse dup
+braindeaddistill le{(WARNING: switching to old pdfm because version =)
+print ==/pdfmold}{pop/pdfmnew}ifelse load}{/pdfmark where{pop{dup type
+/stringtype eq{externalhandler}{2 copy mark 3 1 roll{pdfmnew}
+stackstopped{2 copy mark 3 1 roll{pdfmold}stackstopped{
+(WARNING: pdfm disabled\012)print/pdfm{pop pop}store}{
+(WARNING: new pdfm failed, switching to old pdfm\012)print/pdfm/pdfmold
+load store}ifelse}{/pdfm/pdfmnew load store}ifelse pop pop}ifelse}}{{
+pop pop}}ifelse}ifelse bind def}ifelse end def
+
+%%EndProcSet
+%%BeginFont: CMR12
+%!PS-AdobeFont-1.1: CMR12 1.0
+%%CreationDate: 1991 Aug 20 16:38:05
+
+% Copyright (C) 1997 American Mathematical Society.  All Rights Reserved.
+
+11 dict begin
+/FontInfo 7 dict dup begin
+/version (1.0) readonly def
+/Notice (Copyright (C) 1997 American Mathematical Society. All Rights Reserved) readonly def
+/FullName (CMR12) readonly def
+/FamilyName (Computer Modern) readonly def
+/Weight (Medium) readonly def
+/ItalicAngle 0 def
+/isFixedPitch false def
+end readonly def
+/FontName /CMR12 def
+/PaintType 0 def
+/FontType 1 def
+/FontMatrix [0.001 0 0 0.001 0 0] readonly def
+/Encoding 256 array
+0 1 255 {1 index exch /.notdef put} for
+dup 175 /fi put
+dup 40 /parenleft put
+dup 41 /parenright put
+dup 46 /period put
+dup 49 /one put
+dup 58 /colon put
+dup 69 /E put
+dup 70 /F put
+dup 71 /G put
+dup 74 /J put
+dup 80 /P put
+dup 84 /T put
+dup 97 /a put
+dup 99 /c put
+dup 101 /e put
+dup 103 /g put
+dup 104 /h put
+dup 105 /i put
+dup 106 /j put
+dup 108 /l put
+dup 110 /n put
+dup 111 /o put
+dup 112 /p put
+dup 114 /r put
+dup 115 /s put
+dup 116 /t put
+dup 117 /u put
+readonly def
+/FontBBox{-34 -251 988 750}readonly def
+/UniqueXX 5000794 def
+currentdict end
+currentfile eexec
+9b9c1569015f2c1d2bf560f4c0d52257bacdd6500abda5ed9835f6a016cfc8f0
+0b6c052ed76a87856b50f4d80dfaeb508c97f8281f3f88b17e4d3b90c0f65ec3
+79791aacdc162a66cbbc5be2f53aad8de72dd113b55a022fbfee658cb95f5bb3
+2ba0357b5e050fddf264a07470bef1c52119b6fbd5c77ebed964ac5a2bbec9d8
+b3e48ae5bb003a63d545774b922b9d5ff6b0066ece43645a131879b032137d6d
+823385fe55f3402d557fd3b4486858b2a4b5a0cc2e1bf4e2a4a0e748483c3bcf
+5de47cc5260a3a967cac70a7a35b88b54315191d0423b4065c7a432987938c6b
+edad3b72ad63c2918b6e5a2017457e0d4ebc204a520640fd7c4d05e35ea5486f
+a43d0e970787203855daccb1ed0b16325828b13b7c767a1a58c87902f0546ea5
+404440fa6526975783c2d7a9572b8e5d5176bac598b8960609f49016aebf3763
+89c1adfe6a1ffc0c53b3acd9d168ec3a278fd4f1d9b085dc2df701346c9d0887
+3d230a161692b42a45bb5da343b4edd839dd60685a59aaa49fc65cd8e2ad2a9c
+5cab953495172a1a9f40d5f38e922443a519dd96f667201a408bd1d89e35f4ab
+98e2f68c3366efc14b5afe1018d9c845d808d4f8e07ea8168518a171ab4d6e21
+70eeac099eb7ef46eb9781384da1fac3b3133bb718bc80082eaea88759745188
+f266b31d0c7e791d633f16ed94e05517a32163e74cbd96dc5db066f2a5313d6d
+7f09465608cb404613e0f058073af000e5bdfafbbf9da0c0d5c02a3447f2cdc1
+f56481901e34265c26d331ac3f85bdcbc7c51ef9eddf2b9c189c5253f8e74282
+d6f053d7d183ae17ea175e5ebc401e67d21a9fea139cbbf3bb1358c713a75843
+b39a69aa2b1a7b975f53ff22d1dc3bdf7acd17afa1da21568310c68241b31d3d
+03bf404bd30baf9cc19c75b958bce7155f03cb0cfe2cae0327aad4b603284a51
+7c26de75b8c6f6aaa9debe4aec08ca4b646d787a9dfac85b2c01760e9c6c6162
+fbbc67dbd0796831e00c477d8e23c375ffab46d289be9d2328aec2b7534ae4cd
+d782ec2453e7787f6e6b4537b46c01545cba6f90b8e9a1bccac1937bceeaa5e7
+8e9f368ce067a0a31da98bfbb545be555a7270f0031fadd4f9b186629e5d2c5f
+d264f8f24cd5a1c0f68399ff4b29fd77c4a54d8296523413c41368d333105653
+0d552e9d21486445b09fdd5e5be621e1a7b907609495d4359e53725481fa3466
+0d9db2ebefac3f4f29ced6685254531894f9b78e2f898368ef806fbddb151c34
+67d58d151f1895dcb61231f1674eb903fdca64d9d3127fdd7e4bf1477ff77fd9
+544e1d8423820a07911d5fea7f1df5e6dbeba48e612a09f0253bbc8f56b8abcc
+6cd36dbdcc6db2085860a78b47564d37973959656494ad8f5fb0aec61b4e659f
+316396753b6b8e1784fc5051686cbeb1c3cc2ae273185329d90abb798087e295
+b7df2397e5d860ca4ecba8d03390c8c4a707d6ece3870f112453803995cd79a6
+6b0502199aaf1e7afd74bc55802554b44939828a81798f17afb69f2d7d90722b
+11b1112ce5ecd4a52c497d31ed0afda159073141bfef2136fe23d61668fa3609
+7b072d3887c131cd750a9e0fbacbcf1cf4f23b9abeabc6d00a9150a2617f9395
+8d1a4fff4a4bfc390fb02ffb18ec675f3ff1df2524610f4f8dddf0938dca31a9
+963f241e8d108b7cc402b42a74f85f59b6fb95504cc890f71ebc27f66d9420a6
+ceb7af3243469c7891aff47ad8c8dda4cf58cfd4cd5d3bbf90c56433f1688297
+3860944480ec38c3d10689259a63b88403310f18559d88f3426897ea5b7fa33c
+1ca4574a352bc0fcc9dd04d6ad8b08a525136236a8f31ad786fc3587e02e9c2a
+71729a478603573febd05a4eb17e6b0311a153857beb6d869c9e51bab963b81b
+79a5c4d8bba59a7bc721695f533896b51325433d0e0896c0806a8d885a240e8f
+677363d7c78aaa2b0d4741f3abd31df064ff74b3ac48afe117e8a01ab1f66cbe
+48d4988998ebdf68aaf7c0637a8c00684bbefaedc58a564559397d8296a11aa7
+6409adc0747882fa3844f8c1c76df82405cb02e0fff1500116e5010ab662f9c1
+019de89fcd2a51fbb0dfee565855ebf49dd8b2f28bb22ae2932c6a3653bcc912
+4a0f9dc7bf17c724c9298d39ce371c9bdab20d325f5557420fdf13207c3c23f5
+fd3ba4b9068a51c99321947bf006e1db9745bae5ab9eff30f0dbd6e6ab60e2f8
+95caae67da0c8ed4c09ef367e8e74b612ccbc1a074c5ce065df500b3e5dffd77
+d080531acaa09e1b77ce95c7e6b642b4bfac1f144bec88054f94adb272882e84
+8983509495ef1575e0c819e343f6a93ea1ef54353b91f9568331f6bc9d993001
+00ee0ae6421199ce5456c541252ff29cbe2780e1de1c8c9b3b0b06055b9ea5c1
+44cda28e0af4a219bf467822cdca14c515d756179a5cde52ec32319b517b237f
+861f7ca7a12c7808a7f06f4f653d64413ee064bc5164b8bdc19ec634428c3605
+6424ec9e8b64a6da7c2ab94f0cd661fc2e3d1f345f15d0746bf42f86c35b8ebc
+3e77061968155b3e27bd3979e5b00b54307fb692f16f2c24abb5ce6264cf00f0
+4811ac39926778f367538b19f924d40770c4ca3308a46a4937cf8726734469eb
+72cdd8df43f489ebfa21045b5e15d6afd6fd4b09af757bd1fc0f800fe7cdcc57
+c9cc36dee36738add7599a699abc84ac341fcc5d6320a6f22372b1ccddb0609a
+ae6c6e40374285645e0a1b5ce9468c0d4ba55b377bffa805f4bcbc3d84fb7a8d
+50c90fd72decbc282436ad25db518bbac5d8dffd23faba3f55299b08be1ce77c
+76d3151b9844b783f68de4ebce65675ef519f9a47ee12e21c6c54c3c91f36575
+d42128bf8e2a0f815946e376006b436391816857030c7d2391f3509f9c034cf1
+73c84fa85ff25e059b4769b6b87f8b2a978069112e6a7ae153287dc1fa454f57
+bc3a8546498e0e39d6efe287ecc36d9b9647b9e7ef3a717eb4a387bd8f4fb812
+3f0a8e8826298fbbe0ba60a43ed3906ecf21832c7f59f7e1e59700792be5bc99
+d9642fb8de02f566fc15971a005b6760d2af1204d04799a22b34212a72159bab
+4e240c5f4f7574945b6ff7ac53431e2fe0276d21cd01db579a969f7c6f58aba1
+9651c29b3ad500da3e9244d0cd3a1f1d1816b7d1c37c46f5efcae045d07d6a2b
+b967ef3ed877fe10255c0cff04ffe03664bac5ce4f1958ee86eea63563477f49
+89304da82f2df01761369bfe4f150de0c8a752aafd3f70d3836663d1409669bd
+1dbc442011d5d4748406b25ad810d409e1d1abea408b79ad9ed3c009dd0c6437
+839c2dfbcc8fa87f981a445c40e7c185b9cfaa6dcbd5c3369709d89458d80345
+e3d9bce689ebe1e33c9b7da864ae522289973e1ca1c8c3d8174011c732557eff
+27b33860b08f7553ae37684906ca1f58e94069456808d3f8e4307f31d5248429
+2de6fe785872619bee30e4e1f36bfd61f1d80ddbf1173e8245f2514427865f13
+bd76f3537a925909b9d4295758568114a89c5f7d0267cffa9c1859d14de39be2
+4b9853322720964e97f232b1ffe28663c807e05dbf108df03bb3b11e1695013f
+13e42731163c8d967a7a383bbace61549b7ab0e9d833f6786359d4411fe328e8
+bc36d9d68edebc7626ed5a64bd9027ee1ca0982450c1da04c4b3f7ddf8605ff3
+8ca30ef0b43a8b67c4c1f9d726525d01308e100dd233c662be30a6f531b703f7
+141f6f32591c2e6257d85b27b994701c47afda84975316ff35e1e3756f3f30fd
+1063bfbe85a6d8f506375df7536a45bfdfc9f075c19186159ee3e9ede9eddd72
+90f2d9c2aa56a48215c9a87311561f47ac5c128983a71cb13ec0f2cd1d6c9e4a
+97ce1852ed80522ca88aceaebd50d1eade904c66e717a7805113d7bfcf711379
+10bde0c20da86109ffa00ffd39e69a2e83826aaacdadf0d7d72f7a6cc83a7eab
+d85c2b9875c96f44bbf99e81da8e3685fb01541dc7863fd27161493add70b8d2
+65ce8e69975b0dea3f2105f518bd55bceef0cd6b44fb1f55fc7fbc28784f7645
+faba5d5e699d27d86e6028a100a023fc3468f12d1ef54ee285a7e8fb130356f4
+2c63de65deefb4a173ce3813e7d9e093f15fa72802d8f192fd123fed91b85b5d
+01d46d69caaab8fe78f156be715fe2d5e6fbc15c44f6078662b61436200be230
+f9f854180e6dbccc5971e3de69bea9a3bf673a2a55cbc56aef1e909596fbee49
+a2ed78a75411815dd0e78fc9508519fdf3975d2bcef8db81169b47c4d3dab735
+9a670822390228539719569b41bdb11c33fb65edbe26444da53a43afe950f72e
+efa714b6fb281c2caea6de418cde418e601a59a43bf87253d538ce8ad58fe817
+bd209aab5f4dced0f4fed1e6d20eabb295982ba192bf70aa9c5ebecf95a52a5a
+b5b967ccff0664c293750c97d7492d7ec3c10daa0b82708d7480d16abc2280cc
+dd064934c111526a1c9b37356541f0de1a08d5414a6b2d061b5ea6e0970bc350
+e87ee8da95987b548d72edf3319a2b62f904847416969a9a99756f374d40e5be
+6ed63c9c84c28ddabf3afa1a8b12413bd6f00470fbe3255e03e0f705b97a1f7b
+b9d2f592fcdf841ed84f98093c16f1d2fa7e9ef591d447ac97207503e624deab
+0d51c58136580ece47734e3157805e6e3e7b145e854cbeae8482d183b76307ba
+91a1cdabf314cead3ea6b84cd7b3a20e6bad4fb2bd076ed37a668a0fe93dfec8
+3fad5c4256940e9e34b7165c372700d2d4430846b9ad4efc597894d28e4fcb75
+e04cc89fc878d8f14e0d6753f2c050bced378d9862654e4ff865730b2babd96d
+d1cc1b778c3ed537bf4ded53d622b0bd089df699660f0da0fd4bcd09533bf3af
+e672c68a37e225171dcbd38af279bf8a58b8b68f9b990b694f3c241be142d9d3
+2e4c700e60d776da97bed3057656820ca6210515a278aa333ef185b6ab93df31
+85f5caf7d2279a081cbb494fd670f4d20559b57f1c43989e6bbbf3970b9f0411
+517f49cfdf318360a19b701a515818d6f52431f7788ed33e25c11070fe40f0ab
+1128db28c26c52cbbb23d7c90f6eb2c787f7c4ed2cf4433d056cd153051bd1af
+2bab4b8cf594994f50884e273b21adb7194e7dc47818ac27e6a7ac55ca9ea967
+03e49f95bd94f9f8c5fedc0f902c0e6fb185c84d900fde5fa4a54a277512d77f
+72421daf0f08e3f0ff6ab0586aee5f7b8cb39c4dd6e2168b1c8e0441fa849c44
+f30f6a33abf9b59ebe54f7978c58f84e890181218132d76aae02667542aeff0f
+db2b6135b3f0cb2844431e6094b7f06cf2fb901ef342b589b7f4c49110fc1381
+f612b11ae433de4633f4ad91758baaf0a1457b2c547afbc2031d0aa9fb0e2b69
+51085727858fdca30627ee3e3101d46539d2fe3ae883d197d89cc5d912215405
+c7f12369646b14102712f06fe7e683797c23bad79565bbc42e6ba91af8c5589b
+18f080f762523aac7852f784c649f6322e71f773783d90e781c190a0b55c13fa
+b74e82412a81b7077202e59a47aef1fac229293c0cb822acfa81969c64102420
+ce6d562a8bfa675b9856ace0aa4480030836b372e4e329adbe2395019f1ae885
+c095e7238162335225080426a29083d961779f1cc5e4481ee1124a4762a912d2
+32621a6e800ac0bd5e3fb439a06bb0068a6f5716914abe8104cdc7bc58e0e066
+c2ee047aea3679a727893be8598fb6a37004616e0260452c1ad0848c2a826492
+63d7fea22ca5657f8954025da8e2a4a9a49b07df0ad558cf8e63c5c2ceba0c17
+5aade40da092c3ba354652a8019e8b4a85ddd3b1743960482042bb3d441d06ea
+a515c754e38b09326d84a268277c994ebf3cf1dc141a5a68ccf5248d968241fe
+81a1e379efab9edb799eea88cd1cb241dc8d8a2d064dd4fb5f39bc6d082f8ecf
+09f60c7e496c27ea563e5979258c5e2d6d06290bc0b1108f26518e4f17429d7d
+aabe3eae607e3405b9cddc7a2e9dc38faeb262c37c259d57611cf56789c481bb
+cb6bed6b2811da1f84bca4c8a1b0ab01596a53b1eed921a18400b91b345dae18
+d1bc4687f47d71962a16819a287b8de16ccce406e1dc8ea8d4a158542272c303
+577f77c046dadfd9c884a5f637a93751ec954b7e45df1dcf9b469cc183be9526
+a3180a15f6b1aaedc206748e74249496207aec7768a8fed4f4f97dd3609005d3
+b0ef792804ac798346536867d435f0ad04c0d67cb4e20bd33a46557f8702889b
+07c16ef1f5811f898fffd0bd944b3c659f93edfc2979815ffdc2d9cdcff75c3e
+a9bbaac9ca45309f1953a6937a5e88b8aa9388e7334a60e0780404625b670f43
+ee5884243efd2ea1ca3ab7af916dbfe1e656d3376a9cd02a5b594788b89ba9e6
+3e1b092ef7fbf933082d9fc16066d7d5afb891bddc9a1e4d6bdfcf285a456424
+0c12e8437505b37f92818fe500284a477cd0015f769b20096d908bada3254543
+a01afd72887c6af952a8c33cca4afbb799e3e35ca855a5c308cd83c5bb3a186b
+effcb01a8d113775b9179577a10f8f3c2f31bba0d75a58ff6ffa80c3ff894808
+b85b340db5cfdafd072879ef0e05af83b270fd73ad8d9bc8b71967497cfd0113
+982070d80e3ec325c1608212a777d6d1ca7ad1652a86fa9b1ef61b297248af48
+094ffc9edced0cadba490fb51f83e88a93946d09d0e928c9507f14f6d7049588
+03d7a49a6cd489e3f11d892bacf6f31a9cb9c7da4d3a9cba411d059b436edd74
+3b06e84a7a34853d660aec484e2121a444384a2c0ef75b18a45c1b3febf8d521
+b2cbb8e6b0faf333f44ffdaa826ed2fc32650815cdcb6c194e8411600301a1f9
+60261e9d7f237c53609444d70f522b360dec5ade43378250234525265ab2e90e
+40036ca738c09cbf08d7fa277bdf32af2f6eef02da6716f2d0f7465dd2b9264f
+d0818771883936ce2a7b9ad4
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+cleartomark
+
+%%EndFont 
+TeXDict begin 39158280 55380996 1000 8000 8000 (test.dvi)
+@start /Fa 138[723 506 513 506 1[723 650 723 1[361 1[397
+361 723 650 1[578 1[578 1[650 12[939 3[885 5[668 2[1021
+849 885 10[361 8[650 2[361 4[506 506 27[723 12[{}27 1328.35
+/CMR12 rf end
+%%EndProlog
+%%BeginSetup
+%%Feature: *Resolution 8000dpi
+TeXDict begin
+%%BeginPaperSize: a4
+a4
+%%EndPaperSize
+
+HPSdict begin
+/TargetAnchors
+0 dict dup begin
+end targetdump-hook def
+TeXDict begin
+%%EndSetup

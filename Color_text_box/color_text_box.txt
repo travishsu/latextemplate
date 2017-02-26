@@ -1,0 +1,46 @@
+==========
+
+http://tex.stackexchange.com/questions/44246/how-would-i-make-a-colored-alert-box-in-latex
+
+http://tex.stackexchange.com/questions/10085/colored-fancy-boxes
+
+==========
+
+http://tex.stackexchange.com/questions/46828/how-to-highlight-important-parts-with-a-gray-background
+
+http://tex.stackexchange.com/questions/59340/how-to-highlight-an-entire-paragraph
+
+==========
+
+\documentclass{article}
+\usepackage{graphicx,xcolor}
+\begin{document}
+\colorbox{pink}{\hbox to \textwidth{alert box\hfill}}
+\end{document}
+
+==========
+For a paragraph you can you parbox or minipage.
+
+\documentclass{article}
+\usepackage{graphicx,xcolor,lipsum}
+\begin{document}
+\colorbox{pink}{\parbox{\textwidth}{\lipsum[1]}}
+\end{document}
+
+==========
+
+If you want a bit of "padding"
+
+\documentclass{article}
+\usepackage{graphicx,xcolor,lipsum}
+\begin{document}
+\colorbox{pink}{\parbox{\textwidth}{%
+  \vskip10pt
+  \leftskip10pt\rightskip10pt
+  \lipsum[1]
+  \vskip10pt
+ }
+}
+\end{document}
+
+==========

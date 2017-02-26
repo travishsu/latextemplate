@@ -1,0 +1,51 @@
+\documentclass[12pt,a4paper]{article}
+
+% only rotate the part between \begin{landscape} and \end{landscape}
+% landscape_01.pdf
+\usepackage{lscape}              
+
+% rotate automatically in pdf while viewing and printing
+% only rotate the part between \begin{landscape} and \end{landscape}
+% landscape_02.pdf also add \begin{landscape} and \end{landscape}
+\usepackage{pdflscape}           
+
+% whole document
+% landscape_03.pdf no need to use \begin{landscape} and \end{landscape}
+\usepackage[landscape]{geometry}  
+
+% ===
+\begin{document}
+
+%%\begin{landscape}
+
+The characteristic polynomial is
+$$
+w^4 + \left(2\, g\right)\, w^3 + A\, w^2 + B\, w + C
+,$$
+where
+
+\begin{eqnarray*}
+A&=&- 12\, a^2 - 16\, a\, c + 4\, a\, x - 2\, g\, a - 12\, b^2 - 16\, b\, d + 4\, b\, y - 12\, c^2 + 4\, c\, x - 2\, g\, c - 12\, d^2 + 4\, d\, y - 4\, x^2 + 4\, g\, x - 4\, y^2,
+\end{eqnarray*}
+\begin{eqnarray*}
+B= - 20\, g\, a^2 - 32\, g\, a\, c - 20\, g\, b^2 - 32\, g\, b\, d - 20\, g\, c^2 - 20\, g\, d^2,
+\end{eqnarray*}
+ and
+\begin{eqnarray*}
+C&=&16\, a^4 + 32\, a^3\, c - 48\, a^3\, x + 24\, g\, a^3 + 32\, a^2\, b^2 + 32\, a^2\, b\, d - 48\, a^2\, b\, y + 48\, a^2\, c^2 - 96\, a^2\, c\, x + 48\, g\, a^2\, c - 16\, a^2\, d^2 + 36\, a^2\, x^2\\
+&& - 36\, g\, a^2\, x + 36\, a^2\, y^2 + 32\, a\, b^2\, c - 48\, a\, b^2\, x + 24\, g\, a\, b^2 + 128\, a\, b\, c\, d - 96\, a\, b\, c\, y - 96\, a\, b\, d\, x + 48\, g\, a\, b\, d + 32\, a\, c^3 - 96\, a\, c^2\, x \\
+&&+ 48\, g\, a\, c^2 + 32\, a\, c\, d^2 - 96\, a\, c\, d\, y + 72\, a\, c\, x^2 - 72\, g\, a\, c\, x + 72\, a\, c\, y^2 + 16\, b^4 + 32\, b^3\, d - 48\, b^3\, y - 16\, b^2\, c^2 + 48\, b^2\, d^2 - 96\, b^2\, d\, y \\
+&&+ 36\, b^2\, x^2 - 36\, g\, b^2\, x + 36\, b^2\, y^2 + 32\, b\, c^2\, d - 96\, b\, c\, d\, x + 48\, g\, b\, c\, d + 32\, b\, d^3 - 96\, b\, d^2\, y + 72\, b\, d\, x^2 - 72\, g\, b\, d\, x + 72\, b\, d\, y^2 \\
+&&+ 16\, c^4 - 48\, c^3\, x + 24\, g\, c^3 + 32\, c^2\, d^2 - 48\, c^2\, d\, y + 36\, c^2\, x^2 - 36\, g\, c^2\, x + 36\, c^2\, y^2 - 48\, c\, d^2\, x + 24\, g\, c\, d^2 + 16\, d^4 - 48\, d^3\, y \\
+&&+ 36\, d^2\, x^2 - 36\, g\, d^2\, x + 36\, d^2\, y^2.
+\end{eqnarray*}
+
+%$
+%\left(\begin{array}{cccc} 0 & \mathrm{xw0}_{x}\, \left(\frac{1}{4} + \frac{\mathrm{i}}{4}\right) + %\mathrm{xw1}_{x}\, \left(\frac{1}{4} + \frac{\mathrm{i}}{4}\right) & \mathrm{xw0}_{x}\, \left(\frac{1}{4} - %\frac{\mathrm{i}}{4}\right) + \mathrm{xw1}_{x}\, \left(\frac{1}{4} - \frac{\mathrm{i}}{4}\right) & %\frac{\mathrm{xw0}_{x}}{2} - \frac{\mathrm{xw1}_{x}}{2}\\ \mathrm{xw0}_{x}\, \left(\frac{1}{4} - %\frac{\mathrm{i}}{4}\right) + \mathrm{xw1}_{x}\, \left(\frac{1}{4} - \frac{\mathrm{i}}{4}\right) & 0 & %\frac{\mathrm{xw0}_{x}}{2} - \frac{\mathrm{xw1}_{x}}{2} & \mathrm{xw0}_{x}\, \left(\frac{1}{4} + %\frac{\mathrm{i}}{4}\right) + \mathrm{xw1}_{x}\, \left(\frac{1}{4} + \frac{\mathrm{i}}{4}\right)\\ %\mathrm{xw0}_{x}\, \left(\frac{1}{4} + \frac{\mathrm{i}}{4}\right) + \mathrm{xw1}_{x}\, \left(\frac{1}{4} + %\frac{\mathrm{i}}{4}\right) & \frac{\mathrm{xw0}_{x}}{2} - \frac{\mathrm{xw1}_{x}}{2} & 0 & %\mathrm{xw0}_{x}\, \left(\frac{1}{4} - \frac{\mathrm{i}}{4}\right) + \mathrm{xw1}_{x}\, \left(\frac{1}{4} - %\frac{\mathrm{i}}{4}\right)\\ \frac{\mathrm{xw0}_{x}}{2} - \frac{\mathrm{xw1}_{x}}{2} & \mathrm{xw0}_{x}\, %\left(\frac{1}{4} - \frac{\mathrm{i}}{4}\right) + \mathrm{xw1}_{x}\, 
+%\left(\frac{1}{4} - \frac{\mathrm{i}}{4}\right) & \mathrm{xw0}_{x}\, \left(\frac{1}{4} + 
+%\frac{\mathrm{i}}{4}\right) + \mathrm{xw1}_{x}\, %\left(\frac{1}{4} + \frac{\mathrm{i}}{4}\right) & 0 %\end{array}\right)
+%$
+
+%%\end{landscape}
+
+\end{document}

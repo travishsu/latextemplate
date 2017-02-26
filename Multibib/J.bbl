@@ -1,0 +1,14 @@
+\begin{thebibliography}{1}
+
+\bibitem{xyz}
+John Doe and Jane Doe.
+\newblock Dummy article to be replaced by other references.
+\newblock {\em Journal of xyz}, 2000.
+
+\bibitem{ikoma2009uniqueness}
+N.~Ikoma.
+\newblock {Uniqueness of Positive Solutions for a Nonlinear Elliptic System}.
+\newblock {\em NoDEA: Nonlinear Differential Equations and Applications},
+  16(5):555--567, 2009.
+
+\end{thebibliography}

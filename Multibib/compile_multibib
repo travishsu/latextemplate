@@ -1,0 +1,1 @@
+latex multibib_sample.tex; bibtex J; bibtex C; latex multibib_sample; latex multibib_sample;

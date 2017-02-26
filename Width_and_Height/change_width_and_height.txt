@@ -1,0 +1,7 @@
+Easy page width and height changes in Latex
+
+\usepackage[textwidth=16cm,textheight=24cm]{geometry}
+
+http://wiki.bath.ac.uk/display/latextricks/Easy+page+width+and+height+changes+in+Latex
+
+http://www.ctan.org/tex-archive/macros/latex/contrib/geometry/geometry.pdf .

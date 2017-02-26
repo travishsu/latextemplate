@@ -1,0 +1,50 @@
+% ---< 01 >---
+
+\usepackage[edtable]{lineno}
+
+% ---< 02 >---
+
+\begin{document}
+\linenumbers
+\linenumberdisplaymath
+\pagewiselinenumbers
+
+\rightlinenumbers*
+
+% ---< 03 >---
+
+\begin{linenomath}
+\begin{equation}
+f(x)=x^2.
+\end{equation}
+\end{linenomath}
+
+% ---< 04 >---
+
+\linelabel{Point_01}
+Line \lineref{Point_01}
+Page \pageref{Point_01}
+
+% ---< 05 >---
+
+% an empty line before "{\samepage" and after "}"
+
+{\samepage
+%\begin{linenomath}
+\begin{algorithm}\label{alg:surrogate} \textbf{Surrogate-Assisted Search (SAS)}\\
+\begin{edtable}{tabular}{|lllll|}
+(1) & \multicolumn{3}{l}{Initialization} & \\
+(2) & \multicolumn{3}{l}{Repeat until the effective points are found.} & \\
+\end{edtable}
+\end{algorithm}
+%\end{linenomath}
+
+% ---< 06 >---
+
+\nolinenumbers
+\renewcommand{\thepage}{\roman{page}}
+}
+
+% ---< 07 >---
+
+Note: may need to ``latex'' twice or more to get correct line numbers

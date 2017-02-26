@@ -1,0 +1,71 @@
+%% This document created by Scientific Word (R) Version 3.0
+
+\documentclass[12pt,a4paper]{article}
+
+\textwidth 15cm \textheight 21cm  %A4: 210x297mm
+\hoffset -0.5cm \topmargin -0.cm
+%\oddsidemargin 0.0in \evensidemargin 0pt 
+% \marginparwidth 0pt \marginparsep 0pt 
+
+\usepackage{algorithm}
+\usepackage{algorithmic}
+% ===
+\newtheorem{theorem}{Theorem}
+\newtheorem{algorithm_01}[theorem]{Algorithm}
+\begin{document}
+
+\section{Algorithm Type 1}
+
+\begin{algorithm_01}
+\label{alg:surrogate} \textbf{Surrogate-Assisted Search (SAS)}\\
+\begin{tabular}{|lllll|}
+\hline
+%& & & & \\
+%\item[(1)] Generate grid over the experimental region.
+(1) & \multicolumn{3}{l}{Initialization: Choose initial experiment points and evaluate} & \\
+    & \multicolumn{3}{l}{the corresponding function values.} & \\
+%\item[(3)] Generate basis functions.
+(2) & \multicolumn{3}{l}{Repeat until the effective points are found.} & \\
+
+& (2.1) & \multicolumn{2}{l}{Update the surrogate surface.} & \\
+& (2.2) & \multicolumn{2}{l}{Determine next possible experiment points} & \\
+& (2.3) & \multicolumn{2}{l}{Perform function evaluations.} & \\
+%& & & & \\
+\hline
+\end{tabular}
+\end{algorithm_01}
+
+\section{Algorithm Type 2}
+Reference:
+\begin{itemize}
+\item {\tt http://en.wikibooks.org/wiki/LaTeX/Algorithms\_and\_Pseudocode}
+\item {\tt http://developer.berlios.de/docman/display\_doc.php?docid=800\&group\_id=3442}
+\end{itemize}
+
+\begin{algorithm}
+\caption{Calculate $y = x^n$}
+\label{alg1}
+\begin{algorithmic}[1]
+\REQUIRE $n \geq 0 \vee x \neq 0$
+\ENSURE $y = x^n$
+\STATE $y \Leftarrow 1$
+\IF{$n < 0$}
+\STATE $X \Leftarrow 1 / x$
+\STATE $N \Leftarrow -n$
+\ELSE
+\STATE $X \Leftarrow x$
+\STATE $N \Leftarrow n$
+\ENDIF
+\WHILE{$N \neq 0$}
+\IF{$N$ is even}
+\STATE $X \Leftarrow X \times X$
+\STATE $N \Leftarrow N / 2$
+\ELSE[$N$ is odd]
+\STATE $y \Leftarrow y \times X$
+\STATE $N \Leftarrow N - 1$
+\ENDIF
+\ENDWHILE
+\end{algorithmic}
+\end{algorithm}
+
+\end{document}

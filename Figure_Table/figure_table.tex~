@@ -1,0 +1,14 @@
+% --- package usage
+\usepackage{epsfig,subfigure,epstopdf}
+% ---
+
+\begin{figure}[tfphb]
+\begin{center}
+\begin{tabular}{cc}
+\subfigure[(a)]{\epsfig{figure=./fig/BlankFigure.eps,width=6cm,height=3cm}} &
+\subfigure[(b)]{\epsfig{figure=./fig/BlankFigure.eps,width=6cm,height=3cm}} \\
+\end{tabular}
+\end{center}
+\caption{Put caption here.}
+\label{fig:}
+\end{figure}

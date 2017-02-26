@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb}
+
+\def\bA{{\mathbf A}}
+\def\bu{{\mathbf u}}
+\def\bv{{\mathbf v}}
+\def\bx{{\mathbf x}}
+\def\bzero{{\mathbf 0}}
+
+\def\bcirc{\text{$\bigcirc$ \hspace{-0.42cm} {\tiny\rm 2}~}}
+\def\tcirc{\text{$\bigcirc$ \hspace{-0.42cm} {\tiny\rm 3}~}}
+\def\rcirc{\text{$\bigcirc$ \hspace{-0.42cm} {\tiny\rm r}~}}
+
+
+\begin{document}
+
+The corresponding $m$-coupled discrete nonlinear Schr\"odinger
+equations (DNLSEs) can be written as
+\begin{equation}
+\left\{\begin{array}{l}
+\bA\bu_j-\lambda_j\bu_j+\mu_j\bu_j^\bcirc\circ\bu_j+
+\sum_{i\neq j,i=1}^m\beta_{ij}\bu_i^\bcirc\circ\bu_j=\bzero,\\
+\bu_j>0,\ \bu_j\in \mathbb{R}^N,
+\ \text{for }j=1,\ldots,m,\end{array}\right.
+\end{equation}
+where $\bu_j \in \mathbb{R}^{N}$ denotes the approximation of
+$\phi_j(\bx)$, for $j=1,\ldots,m$.
+
+
+$\bu\circ\bv=(u_1v_1,\ldots,u_Nv_N)^{\top}$ denotes the Hadamard product of $\bu$ and $\bv$, $\bu^{\rcirc}=\bu\circ\cdots\circ\bu$
+denotes the $r$-time Hadamard product of $\bu$.
+\end{document}

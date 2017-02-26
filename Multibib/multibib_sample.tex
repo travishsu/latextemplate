@@ -1,0 +1,51 @@
+%% This document created by Scientific Word (R) Version 3.0
+
+\documentclass[12pt,a4paper]{article}
+
+% NOTE: compile process:
+%
+% latex multibib_sample.tex; 
+% bibtex J; bibtex C; 
+% latex multibib_sample; latex multibib_sample;
+%
+% or run "compile_multibib"
+
+\usepackage[labeled,resetlabels]{multibib}
+\newcites{J,C}{{Journal Ref},{Conferernce Reference}}
+
+% ===
+\begin{document}
+
+% ====================================================================
+
+\section{Section One}
+
+\citeJ{xyz}
+\citeJ{ikoma2009uniqueness}
+
+\bibliographystyleJ{plain}
+\bibliographyJ{myref}
+
+\bibliographystyleC{plain}
+\bibliographyC{myref}
+
+\section{Section Two}
+\citeC{montefusco2008semiclassical}
+
+
+\section{Section Three}
+\citeJ{xyz}
+
+
+% ====================================================================
+
+
+\bibliographystyleJ{plain}
+\bibliographyJ{myref}
+
+\bibliographystyleC{plain}
+\bibliographyC{myref}
+
+%\bibliographystyle{plain}
+%\bibliography{myref}
+\end{document}

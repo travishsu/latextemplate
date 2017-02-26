@@ -1,0 +1,13 @@
+Add at the beginning:
+
+\usepackage{setspace}
+
+Then switch between different spacing options with:
+
+\doublespacing
+\singlespacing
+\onehalfspacing
+
+For other sizes use the \setstretch command like this:
+
+\setstretch{1.8}
